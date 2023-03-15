@@ -47,6 +47,13 @@ createApp({
         cambioImmagine (nuovaImmagine){
             this.imgCorrente = nuovaImmagine;
 
+        },
+
+        activeClass (index){
+            if (index == this.imgCorrente){
+                return 'active';
+            }
+            return '';
         }
 
     }
