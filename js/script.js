@@ -32,10 +32,16 @@ createApp({
     methods:{
         avanti (){
             this.imgCorrente++;
+            if (this.imgCorrente== this.slides.length){
+                this.imgCorrente = 0;
+            }
         },
 
         dietro (){
             this.imgCorrente--;
+            if (this.imgCorrente < 0){
+                this.imgCorrente = this.slides.length - 1;
+            }
         }
 
     }
