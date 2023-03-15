@@ -42,6 +42,11 @@ createApp({
             if (this.imgCorrente < 0){
                 this.imgCorrente = this.slides.length - 1;
             }
+        },
+
+        cambioImmagine (nuovaImmagine){
+            this.imgCorrente = nuovaImmagine;
+
         }
 
     }
