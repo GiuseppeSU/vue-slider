@@ -54,8 +54,19 @@ createApp({
                 return 'active';
             }
             return '';
-        }
+        },
 
+        autoPlay(){
+            setInterval(this.avanti,2000);
+
+        },
+        
+      
+
+    },
+    
+    mounted() {
+        this.autoPlay(); 
     }
 }).mount('#app')
 
