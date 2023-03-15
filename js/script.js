@@ -28,6 +28,15 @@ createApp({
                 }
             ]
         }
+    },
+    methods:{
+        avanti (){
+            this.imgCorrente++;
+        },
+
+        dietro (){
+            this.imgCorrente--;
+        }
 
     }
 }).mount('#app')
